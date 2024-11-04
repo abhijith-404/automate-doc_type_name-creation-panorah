@@ -1,0 +1,16 @@
+{
+    "app": "kk",
+    "doc_type_name": "kkpp",
+    "fields": [
+        {
+            "name": "name",
+            "field_type": "Data",
+            "label": "Name"
+        },
+        {
+            "name": "Roll_number",
+            "field_type": "Text",
+            "label": "Text_val"
+        }
+    ]
+}
