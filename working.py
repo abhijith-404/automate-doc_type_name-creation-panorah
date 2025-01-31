@@ -4,10 +4,10 @@ import json
 import requests  # Ensure requests is installed by running `pip install requests`
 
 # Specify the directory containing folders with JSON files
-doctype_dir = "report"
+doctype_dir = "doctype"
 
 # API endpoint to which data should be sent
-api_endpoint = "http://127.0.0.1:8000/document"  # Replace with the actual API URL
+api_endpoint = "http://127.0.0.1:8001/document"  # Replace with the actual API URL
 
 # Define the allowed field types based on your field_mapping dictionary
 valid_field_types = {
@@ -30,7 +30,7 @@ for root, dirs, files in os.walk(doctype_dir):
                     
                     # Prepare minimal data structure
                     minimal_data = {
-                        "app": "report",  # Static value as per your example
+                        "app": "core",  # Static value as per your example
                         "doc_type_name": os.path.splitext(file)[0],
                         "fields": []
                     }
